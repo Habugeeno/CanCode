@@ -5,4 +5,4 @@ print(2 + 2)
 
 print ('the many men')
 
-print('eat')
+print('eating pants')
