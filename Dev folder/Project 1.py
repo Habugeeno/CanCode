@@ -1,29 +1,30 @@
 
 
+user_input = input('please type "ready" to login or type "create login": ')
 
 lst1 = []
 lst2 = []
 
-user_input = print('please type "ready" to login or type "create login": ')
-ready = input('ready')
-create = input('create login')
-while True:
+user = 'asap'
+word = 'rocky'
+
+
+for lo in user_input:
     if user_input == 'create login':
-        point1 =input('Enter new username')
-        lst1.append((point1))
-        point2 = input('Enter password: ')
-        lst2.append(input(point2))
+        lst1 = [(item) for item in input("Enter new username : ").split()]
+        lst2 = [item for item in input("Enter new password : ").split()]
         print(f'New user created, {lst1} is your username. And {lst2} is your password')
+    break
 
-
+for po in user_input:
     if user_input == 'ready':
         next = input('please enter username: ')
         text = input('enter pass: ')
-        if next == lst1 and text == lst2:
+        if next == user and text == word:
             print('logged in')
         
-    else: print('Error incorrect username or password. Please try again')
-       
+        else: print('Error incorrect username or password. Please try again')
+        break
 
 
 
