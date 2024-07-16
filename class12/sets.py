@@ -142,7 +142,7 @@ cain_books = {'catcher in the rye', 'richest man in babylon', 'sounder'}
 # look = wendy_books.symmetric_difference(cain_books)
 look = wendy_books^cain_books
 
-print(look)
+# print(look)
 
 '''
 Exercise - Sets
@@ -170,8 +170,46 @@ The set of employees that know both Python and JavaScript
 The set of employees that know JavaScript, but not Python
 The set of employees that know Python or JavaScript, but not both
 '''
-
+''' Our variables '''
+#data collection  sets
 python, js = set(), set()
 
-print(python, js)
+#inputs
+dev_type_input, dev_name_input = ' ', ' '
 
+msgs = ('invalid input please try again', 'thank you have a nice day')
+invalid_input = msgs[0]
+have_a_nice_day = msgs[1]
+
+# User Instructions
+\
+while True:
+    dev_type_input = input('type p for Python Dev, js for javascript, or Stop to Exit the program: ').casefold()
+    if dev_type_input == 'stop':
+        print(have_a_nice_day)
+        break
+    if dev_type_input == 'p' or dev_type_input == 'js': # get a name and offer an exit
+        dev_name_input = input('please enter developer name: ').casefold()
+        if dev_name_input == 'stop':
+            print(have_a_nice_day)
+            break
+        elif dev_type_input == 'p':
+            python.add(dev_name_input.title())
+            print(python)
+        elif dev_type_input == 'js':
+            js.add(dev_name_input.title())
+            print(js)
+    else:
+        print(invalid_input)
+
+know_both = python.intersection(js)
+
+know_js_not_python = js.difference(python)
+
+know_js_or_python_not_both = js.symmetric_difference(python)
+
+print(f'''{know_both} know's both ''')
+
+print(f''' {know_js_not_python} know's javascript not python''')
+
+print(f'''{know_js_or_python_not_both} know's python or javascript''')
