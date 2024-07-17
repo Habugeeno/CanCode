@@ -1,9 +1,10 @@
-values = []
-while True:
-    val = int(input("Enter an integer, the value ends if it is 0: "))
-    if val == 0:
-        break
-   
-    values.append(val)
-    if val == 11:
-        print('wazo')
+line = ['color', 1, 'gwap']
+
+pint = []  
+
+pint = input('lol: ')
+for l in pint:
+    if pint in line:
+        print('look')
+else: 
+    print('sea')
