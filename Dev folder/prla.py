@@ -1,6 +1,9 @@
-a = []
-for i in range(6):
-    # change a = a.append(i) to    
-    a.append(i)
-print(a)
-# [0, 1, 2, 3, 4]
+values = []
+while True:
+    val = int(input("Enter an integer, the value ends if it is 0: "))
+    if val == 0:
+        break
+   
+    values.append(val)
+    if val == 11:
+        print('wazo')
