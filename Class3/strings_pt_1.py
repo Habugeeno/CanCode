@@ -187,9 +187,9 @@ letter_r = movie.find('r')
 
 fav_sport = 'football'
 
-letter_b =  fav_sport.find('b')
+letter_b =  fav_sport.index('b')
 
-# print(letter_b)
+print(letter_b)
 
 # Error if letter doesnt exist
 lette_k = fav_sport.find('k')
@@ -209,7 +209,7 @@ index_of_y = fav_car.find('y')
 # isalnum() Returns True if all characters in the string are alphanumeric (Letters and Numbers)
 word_one = '%^&*'
 word_two = 'hello'
-word_three = 'abc123'
+word_three = 'abc123_'
 
 # print(word_one.isalnum())
 
@@ -483,11 +483,11 @@ What string method can you use to count the number of vowels?
 
 '''
 
-slaps = input('Type something: ')
-pimps = slaps.lower().count('a'), slaps.lower().count('e'), slaps.lower().count('i'), slaps.lower().count('o'), slaps.lower().count('u')
+# slaps = input('Type something: ')
+# pimps = slaps.lower().count('a'), slaps.lower().count('e'), slaps.lower().count('i'), slaps.lower().count('o'), slaps.lower().count('u')
 
 
-print(pimps)
+# print(pimps)
 
 
 

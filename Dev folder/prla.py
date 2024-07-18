@@ -1,10 +1,3 @@
-line = ['color', 1, 'gwap']
-
-pint = []  
-
-pint = input('lol: ')
-for l in pint:
-    if pint in line:
-        print('look')
-else: 
-    print('sea')
+a = ((1,1,1),)
+for i in range(2,10):
+    a = a + ((i,i,i),)
